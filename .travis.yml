@@ -6,3 +6,10 @@ before_script:
 - "./gradlew test"
 script:
 - "./gradlew build"
+deploy:
+  provider: heroku
+  api_key:
+    secure: WQYOTuNzo9cg28oxXxqp0sM40u6BEtkUd0YgCAM9xi6diTJ/d6q4Y0RjfgqpZu+c41jG0pkcRiNKPcMI1jMOe2cENBYJqu6MVhcMM39vQxXHAau+pkhKxcPS6qO+05Nqef0jgbqVdEgVKOoTiU62YnpYeaJM5YQQm0lu+IhWhetaG4ebz3ftWF6lefW2a+3tAAkc9GsVGXz506lsLKZBH1vf2AKKchCIwYWZ0NEbEggnlUHEVlbXF0ZkyooSoIj3Rtncz/FyQRmkapiN4WCv3Nx4EoFav3k28j0EbCtRdqTEhXeqaTOb1GaSCxlEgBQV+ML8AKIELXm99V7PBqjCDs7PNQvGo4/syklZz4O3ly7NK54quvrVJXITQ1ptxzV7grKZxuuoI6otwjBfS5WTOusWg/ouEe/vCa3edXXvZVWSX91Tif4OnpTVYZGM+Oh5JEmQQLn/NSCzdeomAdcoRDZKE8GLPPevTnmvi363InOgbMh5VN8zEZE+HDfcbTZroeLYntK9pIKmNoJBXgenUYA8z459ab7wxda6WMf3F4N8Z1uHC7/AqVtlb8cNLpVgTHwH8s5iYOC/d2em+Iqv40S4AsbCy1+JmuCE808RLbQjw18yPYk2N9/QDXdQNN1Yy0C4qXHoAWKAhVmWr5ej7KRYHzwGiGYUz5n9qALgO5A=
+  app: travis-heroku-training
+    on:
+      repo: TWweihuang/travis-heroku-demo
