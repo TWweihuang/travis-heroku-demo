@@ -54,7 +54,7 @@ heroku login
 ```
 travis encrypt $(heroku auth:token) --add deploy.api_key --pro
 ```
-> please refer to the .travis.yml
+> please refer to the .travis.yml, and don't forget to replace your api key in the .travis.yml
 
 * Create Postgres database ( Don't use mysql )
     * [Install Heroku Postgres Add-Ons](https://github.com/qicaisheng/heroku-spring-demo/blob/master/document/install-heroku-postgres-add-ons.md)
