@@ -21,6 +21,16 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+jar {
+    classifier = ''
+    enabled = false
+    manifest {
+        attributes(
+                'Main-Class': 'com.thoughtworks.training.travisheroku.TravisHerokuApplication'
+        )
+    }
+}
+
 test {
     useJUnitPlatform()
 }
